@@ -1,0 +1,69 @@
+Building and Starting the Application:
+In the command line, navigate to the folder with the application in it. Then run the following command:
+mvn compile exec:java
+Then, in any browser, navigate to
+localhost:4567
+
+If you need to open up another window, do so in a separate browser. (ie: Google Chrome and Internet Explorer), or in an incognito tab. 
+
+If you need to restart the application, you must do so from the command line by using the End character, Ctrl-C. (It will then prompt you to type ‘y’ or ‘n’ to end it. Type ‘y’)
+
+
+Acceptance Testing:
+
+Sign In:
+Once you are on the Webpage, find the Sign in Button.
+Press the sign-in button. It should take you to a sign-in page, with a place to enter a player name.
+Enter names with each of the following conditions:
+No characters
+Contains a character that is non-alphanumeric and not space.
+Only Spaces
+More than 13 characters long
+Enter a name that has none of the conditions in step 3. You should log in successfully.
+Enter the exact same name as in step 4 in a separate window of the application. You should NOT log in here.
+Once you have logged in successfully, go to a separate window of the application. You should see that there is ONE player logged in.
+Sign in with the other window as per step 3 (With a unique name). You should see the other players name in a list of selectable names to play against.
+
+Start a Game:
+Sign in on two windows of the application. Then, click on the other player in either window. You should load into a game.
+Verify that you are red and the opposing player is white on the window that you clicked with, and that red is at the bottom. 
+Sign in with a third window and click on either player. You should NOT load into a game.
+Verify that in the window of the player you clicked on, they are in a game against the red player and white is on the bottom.
+On the red player, drag a piece to a white square. You should be able to drag it, but not drop it.
+Drag a piece from the top row of your checkers to a valid space. (1 Diagonally above it). You should be able to drop the piece.
+
+Backup:
+Start a game with another player. Press backup. Nothing should happen.
+Make a move. Then, press “Backup.” You should see that the move is undone.
+Press Backup again. Nothing should happen.
+Go to the opposing player’s window. Pressing backup should do nothing.
+
+Take Turns:
+Start a game with another player. Press Submit turn. It should still be your turn.
+Make a move. Then, press “Backup.” Then, press Submit turn. It should still be your turn.
+Make a move. Then, press Submit turn. It should be your opponent’s turn.
+Go to the opposing player’s window. You should see the results of your move, and you should see that it is your players turn.\
+Sign Out:
+While on the home page and signed in, click sign out. You should be signed out. 
+Start a game, then sign out. You should be signed out and no longer in the game.
+
+Jump:
+While in a game, attempt to jump over an opponent piece while there is a valid empty space behind the opponent piece. Your piece should move to the other side of the opponent piece.
+Attempt to jump over an opponent piece while there is no valid  space behind the opponent piece. Your piece should not be able move to the other side of the opponent piece.
+Once you’ve made a valid jump move and submitted your turn, the opponent piece should disappear from the board.
+Assuming you haven’t submitted your turn yet, if there is another possible valid jump after the previous jump, then you should be able to take that extra jump.
+If you haven’t submitted your jump move yet, try to  jump over the same piece again. Your piece should not be able to move over that same piece again.
+If you’re moving a singles piece, jump an opponent piece in front. Your piece should be able to make that jump.
+If the piece you move is a singles piece, try to jump an opponent piece backwards. Your piece should not make that jump.
+If the piece you move is a king piece, try to jump an opponent piece in front or behind. You should expect to be able to make that jump.
+Attempt to move a different piece when there is a jump move available. Your moving piece should not be able to move.
+
+King Pieces:
+Move a singles piece to the other side of the board. The piece should now change into a king piece with a different picture.
+Once you have your own king piece on the board, you should be able to move it like a singles piece.
+Attempt to move the king piece forward AND backward. You should be allowed to move in both directions.
+Attempt to move the king piece to an occupied space. The king piece should not be able to move, just like the singles pieces.
+With the king piece, attempt to just opponent pieces both going forward AND backwards. Both jump movements should be possible.
+Attempt to do a multi-jump with a king piece. Both forward and backward jump movement in the multi-jump should be possible.
+Attempt to have the king piece jump over an opponent piece twice. The piece should not be able to re-jump the piece again, just like a singles piece.
+
